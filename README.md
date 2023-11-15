@@ -1,7 +1,8 @@
-# dockerで使えるようにしました。
+# winからdockerでGPUも使えるようにしました。
 * ローカルのマシンには、VcXsrvをインストールしてください。GUIの表示に必要です。
 * ローカルにはGPUのドライバーがある。
 * ローカルにcudaやcudcnnを入れる必要はありません。
+* fork元のGPU利用のinstallをしています。
 * fork元のおすすめに沿ったversionを入れたので、別に最新ではありません。
 * fork元の更新は取り入れてください。
 * docker-compose.yml内のenvironmentsたちは、必要なら設定してください。最低限必要なのはdisplayです。
