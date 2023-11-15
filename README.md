@@ -1,3 +1,16 @@
+# dockerで使えるようにしました。
+* ローカルのマシンには、VcXsrvをインストールしてください。GUIの表示に必要です。
+* ローカルにはGPUのドライバーがある。
+* ローカルにcudaやcudcnnを入れる必要はありません。
+* fork元のおすすめに沿ったversionを入れたので、別に最新ではありません。
+* fork元の更新は取り入れてください。
+* docker-compose.yml内のenvironmentsたちは、必要なら設定してください。最低限必要なのはdisplayです。
+
+## 起動手順
+1. docker compose up -d --build
+2. XLaunch(VcXsrv)の起動
+3. docker compose exec reactor python3 run.py --execution-provider cuda
+
 # ReActor 1.0.3 Portable
 ### The Fast and Simple "roop-based*" FaceSwap application with a lot of improvements and with no forced NSFW** filter (uncensored, use it on your own responsibility)
 
